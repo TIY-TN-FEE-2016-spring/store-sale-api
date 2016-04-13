@@ -11,6 +11,6 @@ export default class Find extends Action {
   data() {
     const Image = this.app.make(`store`).model(`sale`);
 
-    return Image.where({id: this.request.params.id}).fetch({ withRelated: [`store`] });
+    return Image.where({id: this.request.params.id}).fetch({ withRelated: [`branch`] });
   }
 }

@@ -12,7 +12,7 @@ export default class Update extends Action {
     const attributes = this.request.body.data.attributes;
     const Image = this.app.make(`store`).model(`sale`);
 
-    return Image.where({id: this.request.params.id}).fetch({ withRelated: [`store`] })
+    return Image.where({id: this.request.params.id}).fetch({ withRelated: [`branch`] })
       .then((image) => {
         if (image) {
           image.set(attributes);

@@ -11,6 +11,6 @@ export default class Index extends Action {
   data() {
     const Image = this.app.make(`store`).model(`sale`);
 
-    return Image.fetchAll({ withRelated: [`store`] });
+    return Image.fetchAll({ withRelated: [`branch`] });
   }
 }

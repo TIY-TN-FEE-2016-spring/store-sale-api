@@ -10,12 +10,12 @@ export default class AppRouter extends Router {
   registerRoutes() {
     this.get(`/`, `version`);
 
-    this.get(`/stores`, `stores/index`);
-    this.post(`/stores`, `stores/create`);
-    this.get(`/stores/:id`, `stores/find`);
-    this.put(`/stores/:id`, `stores/update`);
-    this.patch(`/stores/:id`, `stores/update`);
-    this.delete(`/stores/:id`, `stores/destroy`);
+    this.get(`/branches`, `stores/index`);
+    this.post(`/branches`, `stores/create`);
+    this.get(`/branches/:id`, `stores/find`);
+    this.put(`/branches/:id`, `stores/update`);
+    this.patch(`/branches/:id`, `stores/update`);
+    this.delete(`/branches/:id`, `stores/destroy`);
 
     this.get(`/sales`, `sales/index`);
     this.post(`/sales`, `sales/create`);

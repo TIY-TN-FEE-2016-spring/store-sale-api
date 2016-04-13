@@ -1,7 +1,7 @@
 import Action from 'candycane/dist/http/action';
 import map from 'candycane-jsonapi-mapper';
 
-@map(`store`)
+@map(`branch`)
 export default class Create extends Action {
   /**
    * This function can return a promise (or raw POJOs) of data to be looked up

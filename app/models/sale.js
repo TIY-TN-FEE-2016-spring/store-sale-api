@@ -1,7 +1,7 @@
 export default {
   tableName: `sales`,
 
-  store() {
-    return this.belongsTo(`store`);
+  branch() {
+    return this.belongsTo(`store`, `store_id`);
   },
 }

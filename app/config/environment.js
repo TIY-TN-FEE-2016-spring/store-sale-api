@@ -6,7 +6,7 @@ const config = {
   database: {
     client: 'postgresql',
     connection: {
-      database: 'blog-test',
+      database: 'store-api',
       user:     process.env.USER,
       password: '',
     },
